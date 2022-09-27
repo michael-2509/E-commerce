@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,9 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
+
 # E-commerce
+
 A simple E-commerce website
 
 design: https://www.figma.com/file/atdoTxUjVoQeVF1Ic1E3BL/Miralou-Twelve---Cosmetic-Store-eCommerce-Theme-(Community)
->>>>>>> 8f53fa7ade67a6f5fbad55c5ef4f4d51a9d6b320
