@@ -1,7 +1,13 @@
 .nav {
     display: flex;
+    justify-content: space-between;
+    background-color: #181717;
+    border-bottom: 1px solid white;
+    padding: 1rem 5rem;
 }
 
 .nav_link {
     display: flex;
+    gap: 50px;
+    justify-content: space-around;
 }

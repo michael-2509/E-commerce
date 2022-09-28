@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+
+body {
+    font-family: 'manrope';
+}
+
+.hero {
+    background-image: url("../Assets/home/desktop/image-hero.jpg");
+    background-repeat: none;
+    background-size: cover;
+    padding: 0 5rem;
+}
+
+.new_product {
+    margin: auto 0;
+    padding-top: 8rem;
+    height: 80vh;
+    width: 30%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 3rem 7rem;
+}
+
+.card img {
+    position: relative;
+    bottom: 5rem;
+    background-color: black;
+    width: 50%;
+
+}
+
+button {
+    background-color: #d87d4a;
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+}
+
