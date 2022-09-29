@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
-
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'manrope';
 }
@@ -31,18 +33,23 @@ h1 {
     margin-bottom: 3rem;
 }
 
+.card_content img {
+    position: relative;
+    top: 6rem;
+    width: 40%;
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+
 .card {
     background-color: #f1f1f1;
     color: black;
     padding: 3rem 7rem;
 }
 
-.card img {
-    position: relative;
-    bottom: 5rem;
-    background-color: black;
-    width: 50%;
-
+h2{
+    text-align: center;
 }
 
 button {
@@ -50,5 +57,22 @@ button {
     color: white;
     font-weight: 700;
     padding: 1rem;
+}
+
+/* third srction */
+.speaker {
+    display: flex;
+    background-color: #d87d4a;
+    background-image: url('../Assets/home/desktop/pattern-circles.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 10rem;
+    padding: 5rem 7rem 1rem;
+}
+
+.speaker .zx9-speaker-img img {
+    /* position: relative;
+    top: 6rem; */
+    width: 70%;
+    height: 100%;
 }
 
