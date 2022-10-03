@@ -6,6 +6,7 @@ import speaker from "../Assets/shared/desktop/image-speakers.png";
 import headphone from "../Assets/shared/desktop/image-headphones.png";
 import zx9_speakers from "../Assets/home/desktop/image-speaker-zx9.png";
 import yx1_earphone from "../Assets/home/desktop/image-earphones-yx1.jpg";
+import best_gear from "../Assets/shared/desktop/image-best-gear.jpg";
 
 import classes from "./Home.module.css";
 
@@ -82,6 +83,25 @@ const Home = () => {
         <div className={classes["yx1-content"]}>
           <h3>YX1 EARPHONES</h3>
           <button>SEE PPRODUCT</button>
+        </div>
+      </section>
+
+      <section className={classes["best-gear"]}>
+        <div className={classes["best-gear-content"]}>
+          <h1>
+            BRINGING YOU THE <span>BEST</span> AUDIO GEAR
+          </h1>
+          <p>
+            Located at the heart of New York City, Audiophile is the premier
+            store for high end headphones, earphones, speakers, and audio
+            accessories. We have a large showroom and luxury demonstration rooms
+            available for you to browse and experience a wide range of our
+            products. Stop by our store to meet some of the fantastic people who
+            make Audiophile the best place to buy your portable audio equipment.
+          </p>
+        </div>
+        <div className={classes["best-gear-image"]}>
+          <img src={best_gear} alt="best-gear" />
         </div>
       </section>
     </Fragment>
