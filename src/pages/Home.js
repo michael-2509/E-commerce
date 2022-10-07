@@ -9,6 +9,7 @@ import yx1_earphone from "../Assets/home/desktop/image-earphones-yx1.jpg";
 import best_gear from "../Assets/shared/desktop/image-best-gear.jpg";
 
 import classes from "./Home.module.css";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -104,6 +105,7 @@ const Home = () => {
           <img src={best_gear} alt="best-gear" />
         </div>
       </section>
+      <Footer />
     </Fragment>
   );
 };
