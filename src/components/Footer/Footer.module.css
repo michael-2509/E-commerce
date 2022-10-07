@@ -32,3 +32,8 @@
     justify-content: flex-end;
     padding-top: 4rem;
 }
+
+/* Tablet Responsiveness */
+@media screen and (min-wdth:767px) and (max-width:1023px) {
+    
+}

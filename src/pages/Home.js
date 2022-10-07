@@ -18,10 +18,12 @@ const Home = () => {
       <section className={classes.hero}>
         <div className={classes.new_product}>
           <p>NEW PRODUCT</p>
-          <h1>XX99 MARK 11 HEADPHONES</h1>
+          <h1>
+            XX99 MARK 11 <br /> HEADPHONES
+          </h1>
           <p>
-            Experience natural, lifelike audio and exceptional build quality
-            made for the passionate music enthusiast.
+            "Experience natural, lifelike audio and exceptional build quality
+            made for the passionate music enthusiast."
           </p>
           <button> SEE PRODUCT</button>
         </div>

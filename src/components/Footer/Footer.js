@@ -13,22 +13,22 @@ import Logo from "../../Assets/icons/logo.svg";
 // import twitter from "../../Assets/shared/desktop/icon-twitter.svg";
 // import instagram from "../../Assets/shared/desktop/icon-instagram.svg
 
+const Facebook = styled(FaFacebookSquare)`
+  font-size: 2em;
+  margin-right: 30px;
+`;
+
+const Twitter = styled(FaTwitter)`
+  font-size: 2em;
+  margin-right: 30px;
+`;
+
+const Instagram = styled(FaInstagram)`
+  font-size: 2em;
+  margin-right: 30px;
+`;
+
 const Footer = () => {
-  const Facebook = styled(FaFacebookSquare)`
-    font-size: 2em;
-    margin-right: 30px;
-  `;
-
-  const Twitter = styled(FaTwitter)`
-    font-size: 2em;
-    margin-right: 30px;
-  `;
-
-  const Instagram = styled(FaInstagram)`
-    font-size: 2em;
-    margin-right: 30px;
-  `;
-
   return (
     <footer className={classes["footer"]}>
       <div className={classes["footer-left"]}>
