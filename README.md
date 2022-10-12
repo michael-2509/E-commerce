@@ -13,7 +13,7 @@ A simple E-commerce website with a friendly interface where users can check and 
 - Styled component
 - Tailwind CSS
 
-## How to Contribute
+## Project Setup
 - Fork repository
 - Clone Repository
 - Run npm install
