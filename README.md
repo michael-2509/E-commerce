@@ -12,3 +12,10 @@ A simple E-commerce website with a friendly interface where users can check and 
 - React 
 - Styled component
 - Tailwind CSS
+
+## How to Contribute
+- Fork repository
+- Clone Repository
+- Run npm install
+- start project
+
