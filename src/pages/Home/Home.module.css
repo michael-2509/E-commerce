@@ -7,7 +7,7 @@ body {
 }
 
 .hero {
-    background-image: url("../Assets/home/desktop/image-hero.jpg");
+    background-image: url("../../Assets/home/desktop/image-hero.jpg");
     background-repeat: none;
     background-size: cover;
     padding: 0 5rem;
@@ -17,53 +17,29 @@ body {
     margin: auto 0;
     padding-top: 8rem;
     height: 80vh;
-    width: 30%;
 }
 
 h1 {
     font-size: 3rem;
 }
 
-.card_container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.card_content img {
-    position: relative;
-    top: 6rem;
-    width: 40%;
-    height: 50%;
-    display: block;
-    margin: auto;
-}
-
-.card {
-    background-color: #f1f1f1;
-    color: black;
-    padding: 3rem 7rem;
-}
-
-h2{
-    text-align: center;
-}
 
 button {
     background-color: #d87d4a;
     color: white;
+    cursor: pointer;
     font-weight: 700;
     padding: 1rem;
 }
 
+button:hover {
+    background-color: #fbaf85;;
+}
 /* third section */
 .speaker {
     display: flex;
     background-color: #d87d4a;
-    background-image: url('../Assets/home/desktop/pattern-circles.svg');
+    background-image: url('../../Assets/home/desktop/pattern-circles.svg');
     background-repeat: no-repeat;
     margin: 0 5rem;
     margin-bottom: 3rem;
@@ -80,16 +56,16 @@ button {
 .speaker button {
     background-color: black;
 }
-/* 
-.zx9-speaker-img .speaker-image {;
-    background-image: url("../Assets/home/desktop/image-speaker-zx9.png");
-    z-index: 100;
-} */
+
+.speaker button:hover {
+    background-color: #252525;
+}
+
 
 /* zx7 section */
 
 .section-ZX7{
-    background-image: url("../Assets//home/desktop/image-speaker-zx7.jpg");
+    background-image: url("../../Assets/home/desktop/image-speaker-zx7.jpg");
     background-size: cover;
     color: black;
     margin: 0 5rem;
@@ -100,6 +76,11 @@ button {
 .section-ZX7 button {
     background-color: #dcdddd;
     color: black;
+}
+
+.section-ZX7 button:hover {
+    background-color: black;
+    color: white;
 }
 
 .section-ZX7 h3{
@@ -141,38 +122,7 @@ button {
     color: black;
 }
 
-/* section best gear */
-.best-gear {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    color: black;
-    margin: 0 5rem;
-    margin-bottom: 5rem;
-}
-
-.best-gear-content {
-    flex: 50;
-}
-
-.best-gear-content h1{
-    font-size: 2.5rem;
-}
-
-.best-gear-content h1 span {
-    color:#d87d4a
-}
-
-.best-gear-content p {
-    font-size: 15px;
-    font-weight: 200;
-    line-height: 25px;
-}
-
-.best-gear-image {
-    flex: 50;
-}
-
-.best-gear-image img{
-    width: 100%;
+.yx1-content button:hover {
+    background-color: black;
+    color: white;
 }

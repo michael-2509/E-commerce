@@ -13,10 +13,10 @@ const Nav = () => {
         <img src={Logo} alt="logo" />
 
         <div className={Classes.nav_link}>
-          <Link className={Classes.link} to="#">
+          <Link className={Classes.link} to="/">
             Home
           </Link>
-          <Link className={Classes.link} to="#">
+          <Link className={Classes.link} to="/speaker">
             Speaker
           </Link>
           <Link className={Classes.link} to="#">
