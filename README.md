@@ -15,7 +15,13 @@ A simple E-commerce website with a friendly interface where users can check and 
 
 ## Project Setup
 - Fork repository
+
 - Clone Repository
-- Run npm install
+   `git clone [url]`
+   
+- Install Dependencies
+  `npm install`
+  
 - start project
+  `npm run start`
 
