@@ -16,9 +16,9 @@ const Background = styled.section`
   padding: 5rem 0 5rem;
 `;
 
-const SpeakerPage = () => {
-  // import speaker from category
-  const { speaker } = category;
+const EarphonePage = () => {
+  // import earphone from category
+  const { earphone } = category;
 
   const width = window.innerWidth;
 
@@ -26,9 +26,9 @@ const SpeakerPage = () => {
     <Fragment>
       <Nav />
       <Background>
-        <h1>SPEAKERS</h1>
+        <h1>EARPHONES</h1>
       </Background>
-      {speaker.map((item, index) => (
+      {earphone.map((item, index) => (
         <CategoryItem
           classInfo={index % 2 === 1 ? "content-reverse" : ""}
           image={
@@ -51,23 +51,4 @@ const SpeakerPage = () => {
   );
 };
 
-export default SpeakerPage;
-
-/* <section className={classes["content"]}>
-        <div className={classes["img-speaker"]}>
-          <img src={zx9Speakers} alt="speaker" />
-        </div>
-        <div className={classes["content-info"]}>
-          <p className={classes["new-product"]}>NEW PRODUCT</p>
-          <h1>ZX9 Speaker</h1>
-          <p>
-            Upgrade your sound system with the all new ZX9 active speaker. It’s
-            a bookshelf speaker system that offers truly wireless connectivity
-            -- creating new possibilities for more pleasing and practical audio
-            setups.
-          </p>
-          <Link>
-            <Button>SEE PRODUCT</Button>
-          </Link>
-        </div>
-      </section> */
+export default EarphonePage;

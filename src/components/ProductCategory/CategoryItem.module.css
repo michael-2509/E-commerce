@@ -1,4 +1,10 @@
-
+.category-bkg {
+    display: flex;
+    justify-content: center;
+    background-color: #181717;
+    margin: 5rem 0 8rem;
+    padding: 5rem 0 5rem;
+}
 
 .content{
     display: flex;
@@ -8,7 +14,11 @@
     margin-bottom: 5rem;
 }
 
-.content .img-speaker {
+.content-reverse {
+    flex-direction: row-reverse;
+}
+
+.content .category-img {
     flex-basis: 50%;
 }
 

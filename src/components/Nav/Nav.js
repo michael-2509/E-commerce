@@ -19,10 +19,10 @@ const Nav = () => {
           <Link className={Classes.link} to="/speaker">
             Speaker
           </Link>
-          <Link className={Classes.link} to="#">
+          <Link className={Classes.link} to="/headphone">
             HeadPhone
           </Link>
-          <Link className={Classes.link} to="#">
+          <Link className={Classes.link} to="/earphone">
             Earphone
           </Link>
         </div>

@@ -16,7 +16,7 @@ const Home = () => {
     <Fragment>
       <Nav />
       <section className={classes.hero}>
-        <div className={classes.new_product}>
+        <div className={classes["new-product"]}>
           <p>NEW PRODUCT</p>
           <h1>
             XX99 MARK 11 <br /> HEADPHONES

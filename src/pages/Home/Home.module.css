@@ -13,7 +13,7 @@ body {
     padding: 0 5rem;
 }
 
-.new_product {
+.new-product {
     margin: auto 0;
     padding-top: 8rem;
     height: 80vh;
@@ -35,6 +35,7 @@ button {
 button:hover {
     background-color: #fbaf85;;
 }
+
 /* third section */
 .speaker {
     display: flex;
