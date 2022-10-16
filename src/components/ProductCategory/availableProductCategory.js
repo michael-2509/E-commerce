@@ -47,7 +47,7 @@ export const category = {
         tablet: tabletSpeaker1,
         mobile: mobileSpeaker1,
       },
-      product: true,
+      product: false,
       title: "ZX7 SPEAKERS",
       description:
         "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
@@ -61,7 +61,7 @@ export const category = {
         tablet: tabletHeadphone0,
         mobile: mobileHeadphone0,
       },
-      product: "true",
+      product: true,
       title: "XX99 MARK II HEADPHONES",
       description:
         "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
@@ -72,7 +72,7 @@ export const category = {
         tablet: tabletHeadphone1,
         mobile: mobileHeadphone1,
       },
-      product: "false",
+      product: false,
       title: "XX99 MARK I HEADPHONES",
       description:
         "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
@@ -83,7 +83,7 @@ export const category = {
         tablet: tabletHeadphone2,
         mobile: mobileHeadphone2,
       },
-      product: "false",
+      product: false,
       title: "XX59 HEADPHONES",
       description:
         "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
@@ -97,7 +97,7 @@ export const category = {
         tablet: tabletEarphone,
         mobile: mobileEarphone,
       },
-      product: "true",
+      product: true,
       title: "YX1 WIRELESS EARPHONES",
       description:
         "STailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",

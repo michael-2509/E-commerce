@@ -39,7 +39,7 @@ const HeadphonePage = () => {
               ? item.img.tablet
               : item.img.desktop
           }
-          newProduct={item.product}
+          newProduct={item.product === true ? "NEW PRODUCT" : ""}
           title={item.title}
           description={item.description}
           key={Math.random()}
