@@ -10,6 +10,7 @@ import yx1_earphone from "../../Assets/home/desktop/image-earphones-yx1.jpg";
 
 import Footer from "../../components/Footer/Footer";
 import CategoryNavigation from "../../components/CategoryNavigation/CategoryNavigation";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -26,7 +27,9 @@ const Home = () => {
             <br /> build quality made for the passionate music
             <br /> enthusiast.
           </p>
-          <button> SEE PRODUCT</button>
+          <Link to="/headphone/xx99-mark-two-speaker">
+            <button> SEE PRODUCT</button>
+          </Link>
         </div>
       </section>
 
@@ -35,7 +38,6 @@ const Home = () => {
       <section className={classes.speaker}>
         <div className={classes["zx9-speaker-img"]}>
           <img src={zx9_speakers} alt="zx9_speakers" />
-          {/* <div className={classes["speaker-image"]}></div> */}
         </div>
         <div>
           <h1>
@@ -45,7 +47,10 @@ const Home = () => {
             Upgrade to premium speakers that are
             <br /> phenomenally built to deliver truly remarkable sound.
           </p>
-          <button> SEE PRODUCT</button>
+          <Link to="/speaker/zx9-speaker">
+            {" "}
+            <button> SEE PRODUCT</button>
+          </Link>
         </div>
       </section>
 

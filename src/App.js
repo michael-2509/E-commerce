@@ -3,8 +3,9 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import EarphonePage from "./pages/CategoryPage/Earphone";
 import HeadphonePage from "./pages/CategoryPage/Headphon";
-
 import SpeakerPage from "./pages/CategoryPage/Speaker";
+import ProjectPage from "./pages/ProjectPage";
+import Product from "./pages/ProductPage";
 
 function App() {
   return (
@@ -12,12 +13,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/speaker" element={<SpeakerPage />} />
-
+        <Route path="/speaker/:slug" element={<Product />} />
         <Route path="/headphone" element={<HeadphonePage />} />
-        {/* <Route
-          path="/headphone/:xx99-mark-two-headphone"
-          element={<ProjectPage />}
-        /> */}
+        <Route path="/headphone/:slug" element={<ProjectPage />} />
         <Route path="/earphone" element={<EarphonePage />} />
       </Routes>
     </Router>
