@@ -10,20 +10,6 @@
     width: 85%;
 }
 
-/* .card_container .home-image {
-    width: 100px;
-    height: 80px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.card_container .home-image .image-home {
-    position: absolute;
-    top:20%;
-    height: 160px;
-    width: 100%;
-} */
-
 .card_content > img {
     position: relative;
     top: 6rem;
@@ -46,4 +32,11 @@
     cursor: pointer;
     font-weight: 700;
     text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+    .card_container {
+        flex-direction: column;
+    }
+    
 }

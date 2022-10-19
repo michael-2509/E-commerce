@@ -39,7 +39,7 @@ const Home = () => {
         <div className={classes["zx9-speaker-img"]}>
           <img src={zx9_speakers} alt="zx9_speakers" />
         </div>
-        <div>
+        <div className={classes["zx9-speaker-content"]}>
           <h1>
             ZX9 <br /> SPEAKER
           </h1>

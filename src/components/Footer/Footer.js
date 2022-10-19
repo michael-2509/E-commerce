@@ -9,9 +9,6 @@ import { FaInstagram } from "react-icons/fa";
 import classes from "./Footer.module.css";
 
 import Logo from "../../Assets/icons/logo.svg";
-// import Facebook from "../../Assets/shared/desktop/icon-facebook.svg";
-// import twitter from "../../Assets/shared/desktop/icon-twitter.svg";
-// import instagram from "../../Assets/shared/desktop/icon-instagram.svg
 
 const Facebook = styled(FaFacebookSquare)`
   font-size: 2em;
