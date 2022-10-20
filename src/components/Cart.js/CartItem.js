@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./CartItem.module.css";
 import Button from "../../UI/Button";
-import image from "../../Assets/product-yx1-earphones/desktop/image-product.jpg";
+import image from "../../Assets/product-yx1-earphones/mobile/image-product.jpg";
 
 const CartItem = () => {
   return (

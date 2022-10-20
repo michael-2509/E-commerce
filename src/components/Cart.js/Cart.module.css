@@ -5,6 +5,7 @@
     background-color:#fff;
     border-radius: 5px;
     padding: 3rem 2rem;
+    margin-right: 30px;
     width: 377px;
 }
 
@@ -14,11 +15,25 @@
     align-items: center;
 }
 
-.button {
-    background-color: #fff;
+.cart-header Button  {
+    background-color: #fff; 
     border-bottom: 1px solid black;
     color: black;
     font-weight: 300;
     opacity: .5;
 }
 
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-footer h3 {
+  letter-spacing: 1px;
+  opacity: .5;
+}
+
+.cart-footer p {
+    font-weight: 700;
+    
+}

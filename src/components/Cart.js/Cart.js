@@ -17,8 +17,8 @@ const Cart = () => {
         <CartItem />
         <CartItem />
 
-        <div>
-          <h2>Total</h2>
+        <div className={classes["cart-footer"]}>
+          <h3>Total</h3>
           <p>$7400</p>
         </div>
 
