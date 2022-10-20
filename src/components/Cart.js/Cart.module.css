@@ -1,13 +1,6 @@
-.cart-container {
-    position: absolute;
-    top: 100px;
-    right : 0;
-    background-color:#fff;
-    border-radius: 5px;
-    padding: 3rem 2rem;
-    margin-right: 30px;
+/* .cart-container {
     width: 377px;
-}
+} */
 
 .cart-header {
     display: flex;
