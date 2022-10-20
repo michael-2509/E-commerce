@@ -13,7 +13,7 @@ const ButtonUI = styled.button`
 const Button = (Props) => {
   return (
     <Fragment>
-      <ButtonUI>{Props.children}</ButtonUI>
+      <ButtonUI className={`${Props.className}`}>{Props.children}</ButtonUI>
     </Fragment>
   );
 };

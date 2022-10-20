@@ -1,0 +1,24 @@
+.cart-container {
+    position: absolute;
+    top: 100px;
+    right : 0;
+    background-color:#fff;
+    border-radius: 5px;
+    padding: 3rem 2rem;
+    width: 377px;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    color: black;
+    font-weight: 300;
+    opacity: .5;
+}
+
