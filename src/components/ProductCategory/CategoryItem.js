@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
 
-import classes from "./CategoryItem.module.css";
-import Button from "../../UI/Button";
 import { Link } from "react-router-dom";
 
-const ProductCategory = (Props, classInfo) => {
-  const style = Props.classInfo;
-  console.log(`${style}`);
+import classes from "./CategoryItem.module.css";
+import Button from "../../UI/Button";
+
+const ProductCategory = (Props) => {
   return (
     <Fragment>
       <section
@@ -20,8 +19,9 @@ const ProductCategory = (Props, classInfo) => {
           <p className={classes["new-product"]}>{Props.newProduct}</p>
           <h1>{Props.title}</h1>
           <p>{Props.description}</p>
-          <Link>
-            <Button>SEE PRODUCT</Button>
+          <Link to={`${Props.category}/${Props.slug} `}>
+            {" "}
+            <Button> SEE PRODUCT</Button>
           </Link>
         </div>
       </section>

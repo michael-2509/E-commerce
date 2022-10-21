@@ -42,6 +42,8 @@ const HeadphonePage = () => {
           newProduct={item.product === true ? "NEW PRODUCT" : ""}
           title={item.title}
           description={item.description}
+          category={item.category}
+          slug={item.slug}
           key={Math.random()}
         />
       ))}

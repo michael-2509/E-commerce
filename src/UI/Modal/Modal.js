@@ -1,14 +1,22 @@
 import React from "react";
 
 import ReactDOM from "react-dom";
+import { useDispatch } from "react-redux";
+import { uiAction } from "../../Store/ui-slice";
 
 import classes from "./Modal.module.css";
 
 const portalElement = document.getElementById("overlay");
 
 const Modal = (Props) => {
-  const Backdrop = () => {
-    return <div className={classes.backdrop}></div>;
+  const dispatch = useDispatch();
+
+  const closeCartHandler = () => {
+    dispatch(uiAction.toggleCart());
+  };
+
+  const Backdrop = (Props) => {
+    return <div onClick={Props.onClick} className={classes.backdrop}></div>;
   };
 
   const ModalOverlay = () => {
@@ -17,7 +25,10 @@ const Modal = (Props) => {
 
   return (
     <>
-      {ReactDOM.createPortal(<Backdrop />, portalElement)}
+      {ReactDOM.createPortal(
+        <Backdrop onClick={closeCartHandler} />,
+        portalElement
+      )}
       {ReactDOM.createPortal(
         <ModalOverlay>{Props.chidren}</ModalOverlay>,
         portalElement

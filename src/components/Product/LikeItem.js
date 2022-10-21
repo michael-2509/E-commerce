@@ -4,7 +4,7 @@ import Button from "../../UI/Button";
 import classes from "./LikeItem.module.css";
 
 const Likes = ({ data }) => {
-  const { likes } = data;
+  const { others } = data;
   const width = window.innerWidth;
 
   return (
@@ -12,8 +12,8 @@ const Likes = ({ data }) => {
       <section className={classes.likes}>
         <h2>YOU MAY ALSO LIKE</h2>
         <div className={classes["likes-container"]}>
-          {likes.map((item) => (
-            <div key={item.id} className={classes["likes-image"]}>
+          {others.map((item, index) => (
+            <div key={index} className={classes["likes-image"]}>
               {" "}
               <img
                 src={

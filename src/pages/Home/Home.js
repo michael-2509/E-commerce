@@ -57,7 +57,10 @@ const Home = () => {
       <section className={classes["section-ZX7"]}>
         <div className={classes["speaker-ZX7"]}>
           <h3>ZX7 SPEAKER</h3>
-          <button>SEE PRODUCT</button>
+          <Link to="/speaker/zx7-speaker">
+            {" "}
+            <button> SEE PRODUCT</button>
+          </Link>
         </div>
       </section>
 
@@ -69,7 +72,10 @@ const Home = () => {
 
         <div className={classes["yx1-content"]}>
           <h3>YX1 EARPHONES</h3>
-          <button>SEE PPRODUCT</button>
+          <Link to="/earphone/yx1-earphones">
+            {" "}
+            <button> SEE PRODUCT</button>
+          </Link>
         </div>
       </section>
       <BestGear />

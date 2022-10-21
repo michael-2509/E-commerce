@@ -10,6 +10,7 @@
 .nav-center {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #181717;
     border-bottom: 1px solid white;
     padding: 2rem 5rem;

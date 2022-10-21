@@ -1,12 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import { useDispatch, useSelector } from "react-redux";
+
 import Button from "../../UI/Button";
+import { cartAction } from "../../Store/cart-slice";
 
 import classes from "./InfoItem.module.css";
 
 const Info = ({ data }) => {
-  const { image, newProduct, title, description, price } = data;
+  const { id, image, newProduct, title, description, price } = data;
   const width = window.innerWidth;
+  const dispatch = useDispatch();
+
+  const itemNumber = useSelector((state) => state.cartReducer.itemNumber);
+
+  const incrementHandler = () => {
+    dispatch(cartAction.increment());
+  };
+
+  const decrementHandler = () => {
+    dispatch(cartAction.decrement());
+  };
+
+  const AddToCartHandler = () => {
+    dispatch(
+      cartAction.addToCart({ id, image, title, price, quantity: itemNumber })
+    );
+  };
 
   return (
     <>
@@ -29,13 +49,15 @@ const Info = ({ data }) => {
           <p>{description}</p>
           <p>$ {price}</p>
 
-          <button className={classes.button}>-</button>
-          <button className={classes.button}>1</button>
-          <button className={classes.button}>+</button>
+          <button onClick={decrementHandler} className={classes.button}>
+            -
+          </button>
+          <button className={classes.button}>{itemNumber}</button>
+          <button onClick={incrementHandler} className={classes.button}>
+            +
+          </button>
 
-          <Link to="#">
-            <Button>ADD TO CART</Button>
-          </Link>
+          <Button onClick={AddToCartHandler}>ADD TO CART</Button>
         </div>
       </section>
     </>

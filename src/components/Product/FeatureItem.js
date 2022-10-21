@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./FeatureItem.module.css";
 
 const Feature = ({ data }) => {
-  const { features, box } = data;
+  const { features, includes } = data;
 
   const newFeature = features.split("\n");
   return (
@@ -22,7 +22,7 @@ const Feature = ({ data }) => {
         </div>
         <div className={classes.box}>
           <h2>IN THE BOX</h2>
-          {box.map((item, index) => (
+          {includes.map((item, index) => (
             <p key={index}>
               <span> {item.quantity}</span>
               {item.item}

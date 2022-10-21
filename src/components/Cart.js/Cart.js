@@ -3,8 +3,13 @@ import classes from "./Cart.module.css";
 import Button from "../../UI/Button";
 import CartItem from "./CartItem";
 import Modal from "../../UI/Modal/Modal";
+import { useSelector } from "react-redux";
 
 const Cart = () => {
+  //get cart data from reducer
+  const cartProduct = useSelector((state) => state.cartReducer.items);
+  console.log(cartProduct);
+
   return (
     <>
       <Modal>
@@ -15,9 +20,11 @@ const Cart = () => {
             </h3>{" "}
             <Button className={classes.button}>Remove all</Button>
           </div>
-
-          <CartItem />
-          <CartItem />
+          {cartProduct.map((item) => (
+            <CartItem data={item} />
+          ))}
+          {/* <CartItem />
+          <CartItem /> */}
 
           <div className={classes["cart-footer"]}>
             <h3>Total</h3>

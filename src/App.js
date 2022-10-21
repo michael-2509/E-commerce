@@ -17,6 +17,7 @@ function App() {
         <Route path="/headphone" element={<HeadphonePage />} />
         <Route path="/headphone/:slug" element={<ProjectPage />} />
         <Route path="/earphone" element={<EarphonePage />} />
+        <Route path="/earphone/:slug" element={<Product />} />
       </Routes>
     </Router>
   );

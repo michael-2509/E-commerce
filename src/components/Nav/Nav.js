@@ -1,17 +1,24 @@
 import React, { Fragment } from "react";
 
-import Classes from "./Nav.module.css";
-
-import Logo from "../../Assets/icons/logo.svg";
-import CartIcon from "../../Assets/icons/cart.svg";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
+import CartIcon from "../../Assets/icons/cart.svg";
+import Logo from "../../Assets/icons/logo.svg";
+import { uiAction } from "../../Store/ui-slice";
 import Cart from "../Cart.js/Cart";
 
+import Classes from "./Nav.module.css";
+
 const Nav = () => {
+  const dispatch = useDispatch();
+  const showCart = useSelector((state) => state.uiReducer.cartIsVisible);
+
+  //trigger cart modal
   const showCartHandler = () => {
-    console.log("working");
-    return <Cart />;
+    dispatch(uiAction.toggleCart());
   };
+
   return (
     <Fragment>
       <nav className={Classes.nav}>
@@ -36,9 +43,9 @@ const Nav = () => {
           <button onClick={showCartHandler}>
             <img src={CartIcon} alt="cart" />
           </button>
-          <Cart />
         </section>
       </nav>
+      {showCart && <Cart />}
     </Fragment>
   );
 };
