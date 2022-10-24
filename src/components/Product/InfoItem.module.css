@@ -45,3 +45,20 @@
 .info .button:nth-of-type(3) {
     margin-right: 5px;
 }
+
+/* phone responsiveness */
+
+@media screen and (max-width:767px) {
+    .info {
+        flex-direction: column;
+        margin: 10rem 2rem;
+    }
+
+    .info h1 {
+        font-size: 34px;
+    }
+
+    .info .content-info {
+        padding-left: 0;
+    }
+}

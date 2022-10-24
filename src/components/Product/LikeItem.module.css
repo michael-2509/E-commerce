@@ -23,3 +23,17 @@
  .likes-container img {
      width: 100%;
  }
+
+ /* phone responsiveness */
+
+@media screen and (max-width:767px) {
+   .likes-container {
+    flex-direction: column;
+   }
+
+   .likes-image {
+   margin-bottom: 30px;
+}
+
+   
+}

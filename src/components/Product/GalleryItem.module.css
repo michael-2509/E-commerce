@@ -31,3 +31,18 @@
 .img-third {
     grid-area: img3;
 }
+
+/* phone responsiveness */
+
+@media screen and (max-width:767px) {
+    .gallery {
+        margin: 0 2rem;
+    }
+    .img-container{
+      display: block;
+    }
+
+    .img-container img{
+        margin-bottom: 30px;
+      }
+}

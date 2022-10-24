@@ -31,6 +31,8 @@ const CartSlice = createSlice({
           state.totalAmount + existingItem.price * newItem.quantity;
         existingItem.quantity = existingItem.quantity + newItem.quantity;
       }
+
+      state.itemNumber = 0;
     },
 
     removeItem(state, action) {
