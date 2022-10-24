@@ -10,6 +10,7 @@ import Info from "../components/Product/InfoItem";
 import Likes from "../components/Product/LikeItem";
 import Nav from "../components/Nav/Nav";
 import productData from "../components/Product/ProductPageData";
+import Footer from "../components/Footer/Footer";
 
 const Product = () => {
   const params = useParams();
@@ -26,6 +27,7 @@ const Product = () => {
       <Likes data={data} />
       <CategoryNavigation />
       <BestGear />
+      <Footer />
     </>
   );
 };
