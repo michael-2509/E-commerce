@@ -8,11 +8,12 @@ import { cartAction } from "../../Store/cart-slice";
 import classes from "./InfoItem.module.css";
 
 const Info = ({ data }) => {
-  const { id, image, newProduct, title, description, price } = data;
+  const { id, image, newProduct, name, description, price } = data;
+
   const width = window.innerWidth;
   const dispatch = useDispatch();
 
-  const itemNumber = useSelector((state) => state.cartReducer.itemNumber);
+  let itemNumber = useSelector((state) => state.cartReducer.itemNumber);
 
   const incrementHandler = () => {
     dispatch(cartAction.increment());
@@ -24,7 +25,7 @@ const Info = ({ data }) => {
 
   const AddToCartHandler = () => {
     dispatch(
-      cartAction.addToCart({ id, image, title, price, quantity: itemNumber })
+      cartAction.addToCart({ id, image, name, price, quantity: itemNumber })
     );
   };
 
@@ -45,7 +46,7 @@ const Info = ({ data }) => {
         </div>
         <div className={classes["content-info"]}>
           {newProduct && <p className={classes["new-product"]}>NEW PRODUCT</p>}
-          <h1>{title}</h1>
+          <h1>{name}</h1>
           <p>{description}</p>
           <p>$ {price}</p>
 

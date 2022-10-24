@@ -31,6 +31,7 @@ import desktoEearphone from "../../Assets/category-earphones/desktop/image-yx1-e
 export const category = {
   speaker: [
     {
+      slug: "zx9-speaker",
       img: {
         desktop: desktopSpeaker0,
         tablet: tabletSpeaker0,
@@ -42,6 +43,7 @@ export const category = {
         "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
     },
     {
+      slug: "zx7-speaker",
       img: {
         desktop: desktopSpeaker1,
         tablet: tabletSpeaker1,
@@ -56,6 +58,7 @@ export const category = {
 
   headphone: [
     {
+      slug: "xx99-mark-two-headphones",
       img: {
         desktop: desktopHeadphone0,
         tablet: tabletHeadphone0,
@@ -67,6 +70,7 @@ export const category = {
         "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
     },
     {
+      slug: "xx99-mark-one-headphones",
       img: {
         desktop: desktopHeadphone1,
         tablet: tabletHeadphone1,
@@ -78,6 +82,7 @@ export const category = {
         "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
     },
     {
+      slug: "xx59-headphones",
       img: {
         desktop: desktopHeadphone2,
         tablet: tabletHeadphone2,
@@ -92,6 +97,7 @@ export const category = {
 
   earphone: [
     {
+      slug: "yx1-earphones",
       img: {
         desktop: desktoEearphone,
         tablet: tabletEarphone,

@@ -3,36 +3,46 @@ import classes from "./Cart.module.css";
 import Button from "../../UI/Button";
 import CartItem from "./CartItem";
 import Modal from "../../UI/Modal/Modal";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { cartAction } from "../../Store/cart-slice";
 
 const Cart = () => {
+  const dispatch = useDispatch();
   //get cart data from reducer
   const cartProduct = useSelector((state) => state.cartReducer.items);
-  console.log(cartProduct);
+  const totalAmount = useSelector((state) => state.cartReducer.totalAmount);
+
+  const removeAllItemHandler = () => {
+    dispatch(cartAction.removeAllItems());
+  };
 
   return (
     <>
       <Modal>
-        <section className={classes["cart-container"]}>
-          <div className={classes["cart-header"]}>
-            <h3>
-              Cart <span>(3)</span>
-            </h3>{" "}
-            <Button className={classes.button}>Remove all</Button>
-          </div>
-          {cartProduct.map((item) => (
-            <CartItem data={item} />
-          ))}
-          {/* <CartItem />
-          <CartItem /> */}
+        {cartProduct.length === 0 ? (
+          <p>Cart is Empty</p>
+        ) : (
+          <section className={classes["cart-container"]}>
+            <div className={classes["cart-header"]}>
+              <h3>
+                Cart <span>({cartProduct.length})</span>
+              </h3>{" "}
+              <Button onClick={removeAllItemHandler} className={classes.button}>
+                Remove all
+              </Button>
+            </div>
+            {cartProduct.map((item) => (
+              <CartItem data={item} />
+            ))}
 
-          <div className={classes["cart-footer"]}>
-            <h3>Total</h3>
-            <p>$7400</p>
-          </div>
+            <div className={classes["cart-footer"]}>
+              <h3>Total</h3>
+              <p>{totalAmount}</p>
+            </div>
 
-          <Button>CHECKOUT</Button>
-        </section>
+            <Button>CHECKOUT</Button>
+          </section>
+        )}
       </Modal>
     </>
   );

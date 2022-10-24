@@ -1,10 +1,25 @@
 import React from "react";
-import classes from "./CartItem.module.css";
+
+import { useDispatch } from "react-redux";
+
 import Button from "../../UI/Button";
+import { cartAction } from "../../Store/cart-slice";
+import classes from "./CartItem.module.css";
 
 const CartItem = ({ data }) => {
-  console.log(data);
-  const { image, title, price, quantity } = data;
+  const { id, image, title, price, quantity } = data;
+
+  // const cartNumber = useSelector((state) => state.cartReducer.itemNumber);
+
+  const dispatch = useDispatch();
+
+  const increaseHandler = () => {
+    dispatch(cartAction.addToCart({ id, image, title, price, quantity: 1 }));
+  };
+
+  const decreaseHandler = () => {
+    dispatch(cartAction.removeItem({ id, image, title, price, quantity: 1 }));
+  };
 
   return (
     <>
@@ -21,9 +36,9 @@ const CartItem = ({ data }) => {
           </p>
         </div>
         <div className={classes.buttonContainer}>
-          <Button> - </Button>
+          <Button onClick={decreaseHandler}> - </Button>
           <p>{quantity}</p>
-          <Button>+</Button>
+          <Button onClick={increaseHandler}>+</Button>
         </div>
       </li>
     </>

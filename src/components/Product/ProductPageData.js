@@ -146,19 +146,19 @@ const productData = [
   {
     id: 1,
     slug: "yx1-earphones",
-    title: "YX1 Wireless Earphones",
+    name: "YX1 Wireless Earphones",
     image: {
       mobile: yx1_earphones_mobile,
       tablet: yx1_earphones_tablet,
       desktop: yx1_earphones_desktop,
     },
-    category: "earphones",
+    category: "earphone",
     newProduct: true,
     price: 599,
     description:
-      "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+      "Tailor your listening experience with bespoke dynamic drivers from the newProduct YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
     features:
-      "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.\n\nThe YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.",
+      "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.\n\nThe YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The newProduct 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all newProduct white and grey color scheme as well as the popular classic black.",
     includes: [
       {
         quantity: 2,
@@ -237,8 +237,8 @@ const productData = [
       tablet: xx59_headphone_tablet_originial,
       desktop: xx59_headphone_desktop_originial,
     },
-    category: "headphones",
-    new: false,
+    category: "headphone",
+    newProduct: false,
     price: 899,
     description:
       "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
@@ -318,8 +318,8 @@ const productData = [
       tablet: xx99_mark_one_headphones_tablet_originial,
       desktop: xx99_mark_one_headphones_desktop_originial,
     },
-    category: "headphones",
-    new: false,
+    category: "headphone",
+    newProduct: false,
     price: 1750,
     description:
       "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
@@ -399,11 +399,11 @@ const productData = [
       tablet: xx99_mark_two_headphone_original_tablet,
       desktop: xx99_mark_two_headphone_original_desktop,
     },
-    category: "headphones",
-    new: true,
+    category: "headphone",
+    newProduct: true,
     price: 2999,
     description:
-      "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
+      "The newProduct XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
     features:
       "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.\n\nThe advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.",
     includes: [
@@ -484,8 +484,8 @@ const productData = [
       tablet: zx7_speaker_original_tablet,
       desktop: zx7_speaker_original_desktop,
     },
-    category: "speakers",
-    new: false,
+    category: "speaker",
+    newProduct: false,
     price: 3500,
     description:
       "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
@@ -569,13 +569,13 @@ const productData = [
       tablet: zx9_speaker_original_tablet,
       desktop: zx9_speaker_original_desktop,
     },
-    category: "speakers",
-    new: true,
+    category: "speaker",
+    newProduct: true,
     price: 4500,
     description:
-      "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
+      "Upgrade your sound system with the all newProduct ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating newProduct possibilities for more pleasing and practical audio setups.",
     features:
-      "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).\n\nDiscover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.",
+      "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).\n\nDiscover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience newProduct sensations from old songs since it can respond to even the subtle waveforms.",
     includes: [
       {
         quantity: 2,

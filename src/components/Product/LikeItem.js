@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../../UI/Button";
 
 import classes from "./LikeItem.module.css";
 
 const Likes = ({ data }) => {
-  const { others } = data;
+  const { others, category } = data;
   const width = window.innerWidth;
 
   return (
@@ -12,23 +13,29 @@ const Likes = ({ data }) => {
       <section className={classes.likes}>
         <h2>YOU MAY ALSO LIKE</h2>
         <div className={classes["likes-container"]}>
-          {others.map((item, index) => (
-            <div key={index} className={classes["likes-image"]}>
-              {" "}
-              <img
-                src={
-                  width < 767
-                    ? item.image.mobile
-                    : width > 767 && width < 1023
-                    ? item.image.tablet
-                    : item.image.desktop
-                }
-                alt=""
-              />
-              <h3>{item.name}</h3>
-              <Button>SEE PRODUCT</Button>
-            </div>
-          ))}
+          {others.map((item, index) => {
+            return (
+              <div key={index} className={classes["likes-image"]}>
+                {" "}
+                <img
+                  src={
+                    width < 767
+                      ? item.image.mobile
+                      : width > 767 && width < 1023
+                      ? item.image.tablet
+                      : item.image.desktop
+                  }
+                  alt=""
+                />
+                <h3>{item.name}</h3>
+                <Link to={`/${category}/${item.slug}`}>
+                  {" "}
+                  <Button>SEE PRODUCT</Button>
+                </Link>
+              </div>
+            );
+          })}
+
           {/* <div className={classes["likes-image"]}>
             {" "}
             <img src={headphoneOne} alt="" />

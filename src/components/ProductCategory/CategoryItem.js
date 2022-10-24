@@ -19,7 +19,7 @@ const ProductCategory = (Props) => {
           <p className={classes["new-product"]}>{Props.newProduct}</p>
           <h1>{Props.title}</h1>
           <p>{Props.description}</p>
-          <Link to={`${Props.category}/${Props.slug} `}>
+          <Link to={Props.slug}>
             {" "}
             <Button> SEE PRODUCT</Button>
           </Link>
