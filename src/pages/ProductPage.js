@@ -11,6 +11,7 @@ import Likes from "../components/Product/LikeItem";
 import Nav from "../components/Nav/Nav";
 import productData from "../components/Product/ProductPageData";
 import Footer from "../components/Footer/Footer";
+import GoBack from "../components/GoBack/GoBack";
 
 const Product = () => {
   const params = useParams();
@@ -21,6 +22,7 @@ const Product = () => {
   return (
     <>
       <Nav />
+      <GoBack />
       <Info data={data} />
       <Feature data={data} />
       <Gallery data={data} />

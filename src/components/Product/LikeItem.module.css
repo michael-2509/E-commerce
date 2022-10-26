@@ -9,6 +9,7 @@
      margin-bottom: 3rem;
      width: 350px;
  }
+
  .likes-container {
      display: flex;
      gap: 20px;
@@ -30,6 +31,11 @@
    .likes-container {
     flex-direction: column;
    }
+
+   .likes h2 {
+    font-size: 24px;
+
+}
 
    .likes-image {
    margin-bottom: 30px;

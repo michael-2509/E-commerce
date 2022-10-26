@@ -26,7 +26,7 @@ const EarphonePage = () => {
     <Fragment>
       <Nav />
       <Background>
-        <h1>EARPHONES</h1>
+        <h1 style={{ color: "white" }}>EARPHONES</h1>
       </Background>
       {earphone.map((item, index) => (
         <CategoryItem

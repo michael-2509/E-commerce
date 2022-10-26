@@ -26,7 +26,7 @@ const SpeakerPage = () => {
     <Fragment>
       <Nav />
       <Background>
-        <h1>SPEAKERS</h1>
+        <h1 style={{ color: "white" }}>SPEAKERS</h1>
       </Background>
       {speaker.map((item, index) => (
         <CategoryItem

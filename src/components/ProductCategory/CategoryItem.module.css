@@ -36,3 +36,28 @@
     color: #d87d4a;
     letter-spacing: 5px;
 }
+
+@media screen and (max-width:767px) {
+
+.content{
+   flex-direction: column;
+   margin: 0 1rem;
+   margin-bottom: 150px;
+   text-align: center;
+}
+
+.content .content-info {
+    padding: 0 ;
+}
+
+.content .content-info h1 {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.content .content-info p {
+   line-height: 24px;
+   letter-spacing: 1px;
+   opacity: .5;
+}
+}

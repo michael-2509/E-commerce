@@ -26,7 +26,7 @@ const HeadphonePage = () => {
     <Fragment>
       <Nav />
       <Background>
-        <h1>Header</h1>
+        <h1 style={{ color: "white" }}>Header</h1>
       </Background>
 
       {headphone.map((item, index) => (
