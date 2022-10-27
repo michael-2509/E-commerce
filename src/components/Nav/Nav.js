@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -7,10 +7,12 @@ import CartIcon from "../../Assets/icons/cart.svg";
 import Logo from "../../Assets/icons/logo.svg";
 import { uiAction } from "../../Store/ui-slice";
 import Cart from "../Cart.js/Cart";
+import Navs from "./mobileNav";
 
 import Classes from "./Nav.module.css";
 
 const Nav = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const dispatch = useDispatch();
   const showCart = useSelector((state) => state.uiReducer.cartIsVisible);
 
@@ -23,7 +25,19 @@ const Nav = () => {
     <Fragment>
       <nav className={Classes.nav}>
         <section className={Classes["nav-center"]}>
-          <img src={Logo} alt="logo" />
+          <div className={Classes["nav-logo"]}>
+            <div
+              onClick={() => setIsNavOpen(!isNavOpen)}
+              className={`${Classes[isNavOpen ? "is-active" : "bars"]} ${
+                Classes.bars
+              }`}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img src={Logo} alt="logo" />
+          </div>
 
           <div className={Classes.nav_link}>
             <Link className={Classes.link} to="/">
@@ -39,6 +53,14 @@ const Nav = () => {
               Earphone
             </Link>
           </div>
+
+          <section
+            className={`${Classes[isNavOpen ? "shownavs" : "mobileNavLinks"]} ${
+              Classes.mobileNavLinks
+            }`}
+          >
+            <Navs />
+          </section>
 
           <button onClick={showCartHandler}>
             <img src={CartIcon} alt="cart" />

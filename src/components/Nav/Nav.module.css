@@ -3,8 +3,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
-   
+    z-index: 10; 
 }
 
 .nav-center {
@@ -17,6 +16,27 @@
     margin: 0 auto;
     width:90%
 }
+
+.nav-logo {
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.bars {
+    display: none;
+  }
+  
+.bars span {
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 5px 0;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+  }
 
 .nav_link {
     display: flex;
@@ -39,3 +59,53 @@
 .nav-center img {
     cursor: pointer;
 }
+
+.mobileNavLinks {
+    position: absolute;
+    top: -10090px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    transition:0.5s ease-in-out;
+    opacity: 0;
+    overflow: visible !important;
+    margin: 0 1rem;
+  }
+  
+  .shownavs {
+    top: 95px;
+    opacity: 1;
+    transition:ease-in-out;;
+  }
+
+
+.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  .bars.is-active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .bars.is-active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+@media screen and (max-width: 768px) {
+    .nav-center {
+
+        padding: 2rem 1rem;
+    }
+
+    .nav-logo {
+       flex-basis: 65%;
+      }
+
+    .bars {
+      display: block;
+    }
+    .nav_link {
+      display: none;
+    }
+   
+  }
