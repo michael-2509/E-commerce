@@ -5,7 +5,7 @@ import EarphonePage from "./pages/CategoryPage/Earphone";
 import HeadphonePage from "./pages/CategoryPage/Headphon";
 import SpeakerPage from "./pages/CategoryPage/Speaker";
 import Product from "./pages/ProductPage";
-import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
+import CheckoutPage from "./pages/CheckoutPage/Checkout";
 
 import "./App.css";
 

@@ -22,7 +22,14 @@
 
 .list .cartBody p {
     font-weight: 600;
+    font-weight: 14px;
 }
+
+.list .cartBody p:nth-last-child(1) {
+    opacity: .5;
+}
+
+
 
 .buttonContainer {
     display: flex;
@@ -39,4 +46,12 @@
 .buttonContainer p {
     padding: 10px 13px ;
     margin: 0;
+}
+
+.btn-checkout {
+    background-color: none;
+}
+
+.btn-checkout p {
+    font-weight: 700;
 }

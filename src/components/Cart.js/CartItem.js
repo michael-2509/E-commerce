@@ -6,7 +6,7 @@ import Button from "../../UI/Button";
 import { cartAction } from "../../Store/cart-slice";
 import classes from "./CartItem.module.css";
 
-const CartItem = ({ data }) => {
+const CartItem = ({ data, nav, checkout }) => {
   const { id, image, title, price, quantity } = data;
 
   // const cartNumber = useSelector((state) => state.cartReducer.itemNumber);
@@ -35,11 +35,19 @@ const CartItem = ({ data }) => {
             <span>$</span> {price}
           </p>
         </div>
-        <div className={classes.buttonContainer}>
-          <Button onClick={decreaseHandler}> - </Button>
-          <p>{quantity}</p>
-          <Button onClick={increaseHandler}>+</Button>
-        </div>
+        {nav && (
+          <div className={classes.buttonContainer}>
+            <Button onClick={decreaseHandler}> - </Button>
+            <p>{quantity}</p>
+            <Button onClick={increaseHandler}>+</Button>
+          </div>
+        )}
+
+        {checkout && (
+          <div className={classes["btn-checkout"]}>
+            <p>x {quantity}</p>
+          </div>
+        )}
       </li>
     </>
   );

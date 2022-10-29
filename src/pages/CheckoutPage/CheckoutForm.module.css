@@ -39,3 +39,10 @@ h6 {
 .radio-btn input {
     width: auto;
 }
+
+@media screen and (max-width:767px) {
+    .checkout-form {
+        width: 80%;
+        padding: 2rem 1rem;
+    }
+}

@@ -13,7 +13,11 @@ const ButtonUI = styled.button`
 const Button = (Props) => {
   return (
     <Fragment>
-      <ButtonUI className={`${Props.className}`} onClick={Props.onClick}>
+      <ButtonUI
+        onClick={Props.onClick}
+        type={Props.type}
+        className={`${Props.className}`}
+      >
         {Props.children}
       </ButtonUI>
     </Fragment>

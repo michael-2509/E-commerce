@@ -1,13 +1,29 @@
 import React from "react";
 
-import Classes from "./Input.module.css";
+import classes from "./Input.module.css";
 
 const Input = (Props) => {
   return (
     <>
-      <article>
-        <label>{Props.label}</label>
-        <input placeholder={Props.Placeholder} type={Props.type} />
+      <article
+        className={`${classes.input} ${
+          Props.valueIsInvalid && classes.invalid
+        }`}
+      >
+        <div className={classes.label}>
+          <label>{Props.label}</label>
+          {Props.valueIsInvalid && (
+            <p className="errorText">{Props.errorText}</p>
+          )}
+        </div>
+
+        <input
+          type={Props.type}
+          placeholder={Props.Placeholder}
+          value={Props.value}
+          onChange={Props.onChange}
+          onBlur={Props.onBlur}
+        />
       </article>
     </>
   );

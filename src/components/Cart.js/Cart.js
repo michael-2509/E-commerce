@@ -38,7 +38,7 @@ const Cart = () => {
               </Button>
             </div>
             {cartProduct.map((item) => (
-              <CartItem data={item} />
+              <CartItem data={item} nav={true} />
             ))}
 
             <div className={classes["cart-footer"]}>
