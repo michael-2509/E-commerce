@@ -1,3 +1,6 @@
+ article {
+    margin-bottom: 20px;
+ }
 label {
     font-size: 12px;
     letter-spacing: 0.21px;
@@ -19,4 +22,8 @@ input{
     border-radius: 8px;
     transition: all 0.2s ease 0s;
     outline: none;
+}
+
+input:focus {
+    border-color: #d87d4a;
 }

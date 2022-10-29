@@ -5,11 +5,10 @@ import Classes from "./Input.module.css";
 const Input = (Props) => {
   return (
     <>
-      <section>
+      <article>
         <label>{Props.label}</label>
-        <br />
-        <input />
-      </section>
+        <input placeholder={Props.Placeholder} type={Props.type} />
+      </article>
     </>
   );
 };

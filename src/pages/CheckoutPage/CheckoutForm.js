@@ -12,41 +12,50 @@ const CheckoutForm = () => {
 
         <div className={classes.billing}>
           {" "}
-          <h3>BILLING DETAILS</h3>
-          <div className={classes.flex}>
+          <h6>BILLING DETAILS</h6>
+          <div className={classes["form-row"]}>
             {" "}
-            <Input label="Name" />
-            <Input label="Email Address" />
+            <Input Placeholder="Michael" label="Name" />
+            <Input Placeholder="example@gmail,com" label="Email Address" />
           </div>
-          <Input label="Phone Number" />
+          <Input Placeholder="xxx-xxxx-xxxx" label="Phone Number" />
         </div>
 
         <div className={classes.shipping}>
           {" "}
-          <h3>SHIPPING INFO</h3>
-          <Input label="Adress" />
-          <Input label="Zip code" />
-          <Input label="City" />
-          <Input label="Country" />
+          <h6>SHIPPING INFO</h6>
+          <Input Placeholder="carlinton Street" label="Adress" />
+          <div className={classes["form-row"]}>
+            <Input Placeholder="Michael" label="Zip code" />
+            <Input Placeholder="Lagos" label="City" />
+          </div>
+          <div className={classes["form-row"]}>
+            <Input Placeholder="Nigeria" label="Country" />
+            <div style={{ height: "8px" }} className={classes.special}></div>
+          </div>
         </div>
 
         <div className={classes.payment}>
-          <h3>PAAYMENT DETAILS</h3>
-          <div>
+          <h6>PAAYMENT DETAILS</h6>
+          <div className={classes["form-row"]}>
             <div>
               <p>Payment Method</p>
             </div>
-            <div>
-              <Input />
-              <Input />
+            <div className={classes.radio}>
+              <div className={classes["radio-btn"]}>
+                <input type="radio" /> <label>e-money</label>
+              </div>
+              <div className={classes["radio-btn"]}>
+                <input type="radio" /> <label>Cash on Delivery</label>
+              </div>
             </div>
           </div>
         </div>
         <div>
           {true && (
-            <div>
-              <Input />
-              <Input />
+            <div className={classes["form-row"]}>
+              <Input label="e-money Number" />
+              <Input label="e-money pin" />
             </div>
           )}
           {false && (
