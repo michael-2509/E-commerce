@@ -2,3 +2,7 @@
 .flex{
     display: flex;
 }
+
+.checkout {
+    background: rgb(241, 241,241);
+}

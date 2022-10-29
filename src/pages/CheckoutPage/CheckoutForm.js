@@ -2,12 +2,12 @@ import React from "react";
 
 import Input from "../../UI/Input/Input";
 
-import classes from "./Checkout.module.css";
+import classes from "./CheckoutForm.module.css";
 
 const CheckoutForm = () => {
   return (
     <>
-      <section>
+      <section className={classes["checkout-form"]}>
         <h1>CHECKOUT</h1>
 
         <div className={classes.billing}>
@@ -15,7 +15,7 @@ const CheckoutForm = () => {
           <h3>BILLING DETAILS</h3>
           <div className={classes.flex}>
             {" "}
-            <Input label="name" />
+            <Input label="Name" />
             <Input label="Email Address" />
           </div>
           <Input label="Phone Number" />
@@ -25,12 +25,12 @@ const CheckoutForm = () => {
           {" "}
           <h3>SHIPPING INFO</h3>
           <Input label="Adress" />
-          <Input label="zip code" />
-          <Input label="city" />
-          <Input label="country" />
+          <Input label="Zip code" />
+          <Input label="City" />
+          <Input label="Country" />
         </div>
 
-        <div>
+        <div className={classes.payment}>
           <h3>PAAYMENT DETAILS</h3>
           <div>
             <div>
