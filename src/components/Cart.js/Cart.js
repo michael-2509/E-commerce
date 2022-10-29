@@ -5,6 +5,8 @@ import CartItem from "./CartItem";
 import Modal from "../../UI/Modal/Modal";
 import { useSelector, useDispatch } from "react-redux";
 import { cartAction } from "../../Store/cart-slice";
+import { Link } from "react-router-dom";
+import { uiAction } from "../../Store/ui-slice";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -14,6 +16,10 @@ const Cart = () => {
 
   const removeAllItemHandler = () => {
     dispatch(cartAction.removeAllItems());
+  };
+
+  const closeCartHandler = () => {
+    dispatch(uiAction.toggleCart);
   };
 
   return (
@@ -40,7 +46,9 @@ const Cart = () => {
               <p>{totalAmount}</p>
             </div>
 
-            <Button>CHECKOUT</Button>
+            <Link to="/checkout">
+              <Button onClick={closeCartHandler}>CHECKOUT</Button>
+            </Link>
           </section>
         )}
       </Modal>

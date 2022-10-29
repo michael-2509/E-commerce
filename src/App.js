@@ -1,10 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
+
 import Home from "./pages/Home/Home";
 import EarphonePage from "./pages/CategoryPage/Earphone";
 import HeadphonePage from "./pages/CategoryPage/Headphon";
 import SpeakerPage from "./pages/CategoryPage/Speaker";
 import Product from "./pages/ProductPage";
+import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
+
+import "./App.css";
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
         <Route path="/headphone/:slug" element={<Product />} />
         <Route path="/earphone" element={<EarphonePage />} />
         <Route path="/earphone/:slug" element={<Product />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
     </Router>
   );
