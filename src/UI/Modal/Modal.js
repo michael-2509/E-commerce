@@ -20,7 +20,11 @@ const Modal = (Props) => {
   };
 
   const ModalOverlay = () => {
-    return <div className={classes.modal}>{Props.children}</div>;
+    return (
+      <div className={`${classes.modal} ${Props.className}`}>
+        {Props.children}
+      </div>
+    );
   };
 
   return (
@@ -30,7 +34,9 @@ const Modal = (Props) => {
         portalElement
       )}
       {ReactDOM.createPortal(
-        <ModalOverlay>{Props.chidren}</ModalOverlay>,
+        <ModalOverlay className={Props.className}>
+          {Props.chidren}
+        </ModalOverlay>,
         portalElement
       )}
     </>

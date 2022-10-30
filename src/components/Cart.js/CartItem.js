@@ -6,7 +6,7 @@ import Button from "../../UI/Button";
 import { cartAction } from "../../Store/cart-slice";
 import classes from "./CartItem.module.css";
 
-const CartItem = ({ data, nav, checkout }) => {
+const CartItem = ({ data, nav, checkout, success }) => {
   const { id, image, title, price, quantity } = data;
 
   // const cartNumber = useSelector((state) => state.cartReducer.itemNumber);

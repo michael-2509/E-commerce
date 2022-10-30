@@ -7,6 +7,7 @@ const CartSlice = createSlice({
     totalAmount: 0,
     totalQuantity: 0,
     itemNumber: 1,
+    grandTotal: 0,
   },
   reducers: {
     addToCart(state, action) {
@@ -62,6 +63,10 @@ const CartSlice = createSlice({
       } else {
         state.itemNumber--;
       }
+    },
+
+    updateGrandTotal(state, action) {
+      state.grandTotal = action.payload;
     },
   },
 });

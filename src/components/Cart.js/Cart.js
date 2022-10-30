@@ -19,14 +19,16 @@ const Cart = () => {
   };
 
   const closeCartHandler = () => {
-    dispatch(uiAction.toggleCart);
+    dispatch(uiAction.toggleCart());
   };
 
   return (
     <>
       <Modal>
         {cartProduct.length === 0 ? (
-          <p>Cart is Empty</p>
+          <section className={classes["cart-container"]}>
+            <p>Cart is empty</p>
+          </section>
         ) : (
           <section className={classes["cart-container"]}>
             <div className={classes["cart-header"]}>

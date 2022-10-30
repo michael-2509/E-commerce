@@ -1,12 +1,14 @@
 import React from "react";
 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import CartItem from "../../components/Cart.js/CartItem";
+import { cartAction } from "../../Store/cart-slice";
 import Button from "../../UI/Button";
 
 import classes from "./CheckoutDetails.module.css";
 
 const CheckoutDetails = (Props) => {
+  const dispatch = useDispatch();
   const cartProduct = useSelector((state) => state.cartReducer.items);
 
   const totalPrice = useSelector((state) => state.cartReducer.totalAmount);
@@ -14,12 +16,15 @@ const CheckoutDetails = (Props) => {
   const vatPrice = 600;
   const grandTotal = totalPrice + shippingPrice + vatPrice;
 
+  dispatch(cartAction.updateGrandTotal(grandTotal));
+  console.log(grandTotal);
+
   return (
     <>
       <section className={classes.card}>
         {" "}
         {cartProduct.map((item) => (
-          <CartItem data={item} checkout={true} />
+          <CartItem data={item} checkout={true} grand={grandTotal} />
         ))}
         <div className={classes.flex}>
           <p>TOTAL</p>
