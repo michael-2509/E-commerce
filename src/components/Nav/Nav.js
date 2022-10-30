@@ -54,12 +54,14 @@ const Nav = () => {
             </Link>
           </div>
 
-          <section
-            className={`${Classes[isNavOpen ? "shownavs" : "mobileNavLinks"]} ${
-              Classes.mobileNavLinks
-            }`}
-          >
-            <Navs />
+          <section className={`${isNavOpen && Classes.mobileNavOverlay}`}>
+            <section
+              className={`${
+                Classes[isNavOpen ? "shownavs" : "mobileNavLinks"]
+              } ${Classes.mobileNavLinks}`}
+            >
+              <Navs />
+            </section>
           </section>
 
           <button onClick={showCartHandler}>

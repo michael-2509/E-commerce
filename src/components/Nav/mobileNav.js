@@ -34,8 +34,8 @@ function Navs() {
           </div>
         </div>
       </Link>
+
       <Link
-        data-aos="zoom-in"
         // onClick={() => setIsNavOpen(false)}
         className={classes.mobileCategoryContainer}
         to="/speaker"
@@ -58,7 +58,6 @@ function Navs() {
         </div>
       </Link>
       <Link
-        data-aos="fade-left"
         // onClick={() => setIsNavOpen(false)}
         className={classes.mobileCategoryContainer}
         to="/earphone"
