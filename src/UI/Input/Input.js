@@ -11,7 +11,7 @@ const Input = (Props) => {
         }`}
       >
         <div className={classes.label}>
-          <label>{Props.label}</label>
+          <label htmlFor={Props.htmlFor}>{Props.label}</label>
           {Props.valueIsInvalid && (
             <p className="errorText">{Props.errorText}</p>
           )}
@@ -23,6 +23,7 @@ const Input = (Props) => {
           value={Props.value}
           onChange={Props.onChange}
           onBlur={Props.onBlur}
+          checked={Props.checked}
         />
       </article>
     </>
