@@ -15,6 +15,7 @@ const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const dispatch = useDispatch();
   const showCart = useSelector((state) => state.uiReducer.cartIsVisible);
+  const cartProduct = useSelector((state) => state.cartReducer.items);
 
   //trigger cart modal
   const showCartHandler = () => {
@@ -66,6 +67,9 @@ const Nav = () => {
 
           <button onClick={showCartHandler}>
             <img src={CartIcon} alt="cart" />
+            <p onClick={showCartHandler} className={Classes.amount}>
+              {cartProduct.length}
+            </p>
           </button>
         </section>
       </nav>

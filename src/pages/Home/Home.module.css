@@ -9,7 +9,7 @@ body {
 
 .hero {
     background-image: url("../../Assets/home/desktop/image-hero.jpg");
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
     padding: 0 5rem;
@@ -19,9 +19,7 @@ body {
     display: flex;
     flex-direction: column;
    justify-content: center;
-
-    padding-top: 8rem;
-    height: 100vh;
+    padding: 10rem 0;
 }
 
 h1 {
@@ -41,31 +39,29 @@ button:hover {
 }
 
 /* third section */
-.speaker {
+.section-zx9 {
     display: flex;
     background-color: #d87d4a;
     background-image: url('../../Assets/home/desktop/pattern-circles.svg');
     background-repeat: no-repeat;
+    color: white;
     margin: 0 5rem;
     margin-bottom: 3rem;
     padding: 5rem 7rem 1rem;
 }
 
-
-
-.speaker .zx9-speaker-img img {
+.section-zx9 .zx9-speaker-img img {
     position: relative;
     top: 3rem;
     width: 50%;
     height: 100%;
 }
 
-
-.speaker button {
+.section-zx9 button {
     background-color: black;
 }
 
-.speaker button:hover {
+.section-zx9 button:hover {
     background-color: #252525;
 }
 
@@ -139,26 +135,52 @@ button:hover {
     .hero {
         background-image: url("../../Assets/home/mobile/image-header.jpg");
         background-size: cover;
+        padding: 0;
     }
 
-    .speaker {
+    .new-product {
+        text-align: center;
+        padding: 10rem 0;
+        
+    }
+
+    .new-product h1{
+        font-size: 2.2rem;
+    }
+
+    .section-zx9 {
         flex-direction: column;
         align-items: center;
+        margin: 0 2rem;
+        padding: 1rem 1rem;
     }
 
-    .speaker .zx9-speaker-img {
-        width: 50%;
+    .section-zx9 .zx9-speaker-img {
+        width: 200px;
+        margin-bottom: 4rem;
     } 
 
-    .speaker .zx9-speaker-img img {
+    .section-zx9 .zx9-speaker-img img {
         width: 100%;
     }
 
     .zx9-speaker-content{
        text-align: center;
     }
+    
+    .section-ZX7 {
+        background-image: url("../../Assets/home/mobile/image-speaker-zx7.jpg");
+        margin: 4rem 2rem;
+    }
 
+    .section-yx1 {
+        flex-direction: column;
+        margin: 2rem  2rem;
+    }
 
-
+    .section-yx1 .yx1-content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 
 }

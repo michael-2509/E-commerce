@@ -35,7 +35,7 @@ const Home = () => {
 
       <CategoryNavigation />
 
-      <section className={classes.speaker}>
+      <section className={classes["section-zx9"]}>
         <div className={classes["zx9-speaker-img"]}>
           <img src={zx9_speakers} alt="zx9_speakers" />
         </div>
