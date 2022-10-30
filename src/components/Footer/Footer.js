@@ -9,6 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 import classes from "./Footer.module.css";
 
 import Logo from "../../Assets/icons/logo.svg";
+import { Link } from "react-router-dom";
 
 const Facebook = styled(FaFacebookSquare)`
   font-size: 2em;
@@ -30,12 +31,12 @@ const Footer = () => {
     <footer className={classes["footer"]}>
       <div className={classes["footer-left"]}>
         <img src={Logo} alt="logo" />
-        <div>
+        <div className={classes["footer-link"]}>
           {" "}
-          <p>Home</p>
-          <p>Speaker</p>
-          <p>HeadPhone</p>
-          <p>Earphone</p>
+          <Link to="/">Home</Link>
+          <Link to="/speaker">Speaker</Link>
+          <Link to="/headphone">HeadPhone</Link>
+          <Link to="/earphone">Earphone</Link>
         </div>
       </div>
       <div>

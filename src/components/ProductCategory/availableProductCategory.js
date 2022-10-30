@@ -31,6 +31,7 @@ import desktoEearphone from "../../Assets/category-earphones/desktop/image-yx1-e
 export const category = {
   speaker: [
     {
+      category: "SPEAKERS",
       slug: "zx9-speaker",
       img: {
         desktop: desktopSpeaker0,
@@ -58,6 +59,7 @@ export const category = {
 
   headphone: [
     {
+      category: "HEADPHONES",
       slug: "xx99-mark-two-headphones",
       img: {
         desktop: desktopHeadphone0,
@@ -97,6 +99,7 @@ export const category = {
 
   earphone: [
     {
+      category: "EARPHONES",
       slug: "yx1-earphones",
       img: {
         desktop: desktoEearphone,

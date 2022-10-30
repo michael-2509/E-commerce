@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import CartItem from "../../components/Cart.js/CartItem";
 import { cartAction } from "../../Store/cart-slice";
 import Button from "../../UI/Button";
-import Modal from "../../UI/Modal/Modal";
 
 import classes from "./successModal.module.css";
 

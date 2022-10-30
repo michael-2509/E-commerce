@@ -28,6 +28,9 @@
  /* phone responsiveness */
 
 @media screen and (max-width:767px) {
+    .likes {
+        margin-bottom: 0;
+    }
    .likes-container {
     flex-direction: column;
    }

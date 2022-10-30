@@ -31,7 +31,6 @@ const Info = ({ data }) => {
 
   return (
     <>
-      <p>Go Back</p>
       <section className={classes.info}>
         <div className={classes["img-info"]}>
           <img

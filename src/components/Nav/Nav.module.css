@@ -60,6 +60,11 @@
     cursor: pointer;
 }
 
+.nav-center button {
+  background-color: #181717;
+  border: none;
+}
+
 .mobileNavLinks {
     position: absolute;
     top: -10090px;
@@ -91,10 +96,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  button {
-    background-color: #181717;
-    border: none;
-  }
+ 
 
 @media screen and (max-width: 768px) {
     .nav-center {

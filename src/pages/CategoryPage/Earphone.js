@@ -6,15 +6,8 @@ import Footer from "../../components/Footer/Footer";
 import Nav from "../../components/Nav/Nav";
 import { category } from "../../components/ProductCategory/availableProductCategory";
 import CategoryItem from "../../components/ProductCategory/CategoryItem";
-import styled from "styled-components";
 
-const Background = styled.section`
-  display: flex;
-  justify-content: center;
-  background-color: #181717;
-  margin: 5rem 0 8rem;
-  padding: 5rem 0 5rem;
-`;
+import Hero from "../../components/ProductCategory/Hero";
 
 const EarphonePage = () => {
   // import earphone from category
@@ -25,9 +18,7 @@ const EarphonePage = () => {
   return (
     <Fragment>
       <Nav />
-      <Background>
-        <h1 style={{ color: "white" }}>EARPHONES</h1>
-      </Background>
+      <Hero category={earphone[0].category} />
       {earphone.map((item, index) => (
         <CategoryItem
           classInfo={index % 2 === 1 ? "content-reverse" : ""}

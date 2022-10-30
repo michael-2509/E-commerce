@@ -51,7 +51,7 @@
 @media screen and (max-width:767px) {
     .info {
         flex-direction: column;
-        margin: 10rem 2rem;
+        margin: 3rem 2rem;
     }
 
     .info h1 {
