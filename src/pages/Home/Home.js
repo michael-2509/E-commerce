@@ -27,7 +27,7 @@ const Home = () => {
             <br /> build quality made for the passionate music
             <br /> enthusiast.
           </p>
-          <Link to="/headphone/xx99-mark-two-speaker">
+          <Link to="/headphone/xx99-mark-two-headphones">
             <button> SEE PRODUCT</button>
           </Link>
         </div>

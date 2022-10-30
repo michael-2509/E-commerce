@@ -5,11 +5,9 @@ const GoBack = () => {
   const navigate = useNavigate();
 
   const buttonStyle = {
-    background: "none",
-    border: "none",
     color: "black",
     fontSize: "18px",
-    marginTop: "10rem",
+    paddingTop: "6rem",
     marginLeft: "2rem",
   };
 

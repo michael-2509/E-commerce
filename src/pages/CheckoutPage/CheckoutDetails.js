@@ -17,7 +17,6 @@ const CheckoutDetails = (Props) => {
   const grandTotal = totalPrice + shippingPrice + vatPrice;
 
   dispatch(cartAction.updateGrandTotal(grandTotal));
-  console.log(grandTotal);
 
   return (
     <>

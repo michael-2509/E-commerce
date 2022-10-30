@@ -42,7 +42,7 @@ h6 {
 
 @media screen and (max-width:767px) {
     .checkout-form {
-        width: 80%;
-        padding: 2rem 1rem;
+        width: 95%;
+        padding: 2rem 2rem;
     }
 }

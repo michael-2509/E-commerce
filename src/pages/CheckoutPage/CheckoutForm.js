@@ -5,7 +5,7 @@ import CheckoutDetails from "./CheckoutDetails";
 
 import classes from "./CheckoutForm.module.css";
 
-const CheckoutForm = () => {
+const CheckoutForm = (Props) => {
   const [payment, setPayment] = useState("emoney");
   //regEx for email validation
   const validEmail = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
@@ -20,6 +20,7 @@ const CheckoutForm = () => {
 
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
+  const [formIsValid, setFormIsValid] = useState(false);
 
   const [userNameIsInvalid, setUserNameIsInvalid] = useState(null);
   const [emailIsInvalid, setEmailIsInvalid] = useState(null);
@@ -162,6 +163,20 @@ const CheckoutForm = () => {
     } else {
       setCountryIsInvalid(false);
     }
+    if (
+      userNameIsInvalid &&
+      emailIsInvalid &&
+      phoneNumberIsInvalid &&
+      addressIsInvalid &&
+      zipcodeIsInvalid &&
+      cityIsInvalid &&
+      countryIsInvalid
+    ) {
+      setFormIsValid(true);
+      Props.onShowModal();
+    }
+
+    console.log(formIsValid);
   };
 
   return (
