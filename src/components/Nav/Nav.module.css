@@ -66,17 +66,17 @@
 }
 
 .nav-center .amount {
-  position: relative;
+  position: absolute;
   padding: 5px;
   color: white;
   font-size: 13px;
   font-weight: 700;
-  top: -50px;
+  top: 10px;
   z-index: 1;
   background: #d87d4a;
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,6 +143,10 @@
     }
     .nav_link {
       display: none;
+    }
+
+    button{
+      padding: 0;
     }
    
   }
