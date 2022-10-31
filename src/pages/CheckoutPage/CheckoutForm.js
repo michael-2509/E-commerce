@@ -164,19 +164,19 @@ const CheckoutForm = (Props) => {
       setCountryIsInvalid(false);
     }
     if (
-      userNameIsInvalid &&
-      emailIsInvalid &&
-      phoneNumberIsInvalid &&
-      addressIsInvalid &&
-      zipcodeIsInvalid &&
-      cityIsInvalid &&
-      countryIsInvalid
+      userNameIsInvalid === false &&
+      emailIsInvalid === false &&
+      phoneNumberIsInvalid === false &&
+      addressIsInvalid === false &&
+      zipcodeIsInvalid === false &&
+      cityIsInvalid === false &&
+      countryIsInvalid === false
     ) {
       setFormIsValid(true);
-      Props.onShowModal();
+      Props.onShowModal(formIsValid);
+    } else {
+      setFormIsValid(false);
     }
-
-    console.log(formIsValid);
   };
 
   return (

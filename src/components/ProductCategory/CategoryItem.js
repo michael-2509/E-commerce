@@ -21,7 +21,14 @@ const ProductCategory = (Props) => {
           <p>{Props.description}</p>
           <Link to={Props.slug}>
             {" "}
-            <Button> SEE PRODUCT</Button>
+            <Button
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+            >
+              {" "}
+              SEE PRODUCT
+            </Button>
           </Link>
         </div>
       </section>

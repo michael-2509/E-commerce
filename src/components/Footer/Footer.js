@@ -27,16 +27,27 @@ const Instagram = styled(FaInstagram)`
 `;
 
 const Footer = () => {
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
     <footer className={classes["footer"]}>
       <div className={classes["footer-left"]}>
         <img src={Logo} alt="logo" />
         <div className={classes["footer-link"]}>
           {" "}
-          <Link to="/">Home</Link>
-          <Link to="/speaker">Speaker</Link>
-          <Link to="/headphone">HeadPhone</Link>
-          <Link to="/earphone">Earphone</Link>
+          <Link to="/" onClick={scrollUp}>
+            Home
+          </Link>
+          <Link to="/speaker" onClick={scrollUp}>
+            Speaker
+          </Link>
+          <Link to="/headphone" onClick={scrollUp}>
+            HeadPhone
+          </Link>
+          <Link to="/earphone" onClick={scrollUp}>
+            Earphone
+          </Link>
         </div>
       </div>
       <div>

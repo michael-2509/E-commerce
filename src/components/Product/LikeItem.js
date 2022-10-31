@@ -8,6 +8,10 @@ const Likes = ({ data }) => {
   const { others, category } = data;
   const width = window.innerWidth;
 
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <section className={classes.likes}>
@@ -30,30 +34,11 @@ const Likes = ({ data }) => {
                 <h3>{item.name}</h3>
                 <Link to={`/${category}/${item.slug}`}>
                   {" "}
-                  <Button>SEE PRODUCT</Button>
+                  <Button onClick={scrollUp}>SEE PRODUCT</Button>
                 </Link>
               </div>
             );
           })}
-
-          {/* <div className={classes["likes-image"]}>
-            {" "}
-            <img src={headphoneOne} alt="" />
-            <h3>XX99 MARK I</h3>
-            <Button>SEE PRODUCT</Button>
-          </div>
-          <div className={classes["likes-image"]}>
-            {" "}
-            <img src={headphonetwo} alt="" />
-            <h3>XX59</h3>
-            <Button>SEE PRODUCT</Button>
-          </div>
-          <div className={classes["likes-image"]}>
-            {" "}
-            <img src={speaker} alt="" />
-            <h3>ZX9 Speaker</h3>
-            <Button>SEE PRODUCT</Button>
-          </div> */}
         </div>
       </section>
     </>

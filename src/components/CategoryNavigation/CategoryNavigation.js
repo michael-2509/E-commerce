@@ -12,7 +12,12 @@ const CategoryNavigation = () => {
   return (
     <Fragment>
       <section className={classes.card_container}>
-        <Link to="/headphone">
+        <Link
+          to="/headphone"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
           <div className={classes.card_content}>
             <img src={headphone} alt="headphone" />
             <div className={classes.card}>
@@ -27,7 +32,12 @@ const CategoryNavigation = () => {
           </div>
         </Link>
 
-        <Link to="/speaker">
+        <Link
+          to="/speaker"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
           <div className={classes.card_content}>
             <img src={speaker} alt="speaker" />
             <div className={classes.card}>
@@ -42,7 +52,12 @@ const CategoryNavigation = () => {
           </div>
         </Link>
 
-        <Link to="/earphone">
+        <Link
+          to="/earphone"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
           <div className={classes.card_content}>
             <img src={earphone} alt="earphone" />
             <div className={classes.card}>

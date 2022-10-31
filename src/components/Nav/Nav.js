@@ -22,6 +22,10 @@ const Nav = () => {
     dispatch(uiAction.toggleCart());
   };
 
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <Fragment>
       <nav className={Classes.nav}>
@@ -41,16 +45,16 @@ const Nav = () => {
           </div>
 
           <div className={Classes.nav_link}>
-            <Link className={Classes.link} to="/">
+            <Link className={Classes.link} to="/" onClick={scrollUp}>
               Home
             </Link>
-            <Link className={Classes.link} to="/speaker">
+            <Link className={Classes.link} to="/speaker" onClick={scrollUp}>
               Speaker
             </Link>
-            <Link className={Classes.link} to="/headphone">
+            <Link className={Classes.link} to="/headphone" onClick={scrollUp}>
               HeadPhone
             </Link>
-            <Link className={Classes.link} to="/earphone">
+            <Link className={Classes.link} to="/earphone" onClick={scrollUp}>
               Earphone
             </Link>
           </div>
@@ -65,12 +69,10 @@ const Nav = () => {
             </section>
           </section>
 
-          <button onClick={showCartHandler}>
+          <div onClick={showCartHandler}>
             <img src={CartIcon} alt="cart" />
-            <p onClick={showCartHandler} className={Classes.amount}>
-              {cartProduct.length}
-            </p>
-          </button>
+            <p className={Classes.amount}>{cartProduct.length}</p>
+          </div>
         </section>
       </nav>
       {showCart && <Cart />}

@@ -125,7 +125,7 @@ import zx7_others_desktop from "../../Assets/shared/desktop/image-zx7-speaker.jp
 //zx9 original
 import zx9_speaker_original_mobile from "../../Assets/product-zx9-speaker/mobile/image-product.jpg";
 import zx9_speaker_original_tablet from "../../Assets/product-zx9-speaker/tablet/image-product.jpg";
-import zx9_speaker_original_desktop from "../../Assets/product-zx9-speaker/tablet/image-product.jpg";
+import zx9_speaker_original_desktop from "../../Assets/product-zx9-speaker/desktop/image-product.jpg";
 
 //zx9 galleries first
 import zx9_speaker_galleries_first_mobile from "../../Assets/product-zx9-speaker/mobile/image-gallery-1.jpg";

@@ -129,6 +129,17 @@ button:hover {
     color: white;
 }
 
+/* Tablet Responsiveness */
+@media screen and (max-width:1023px) {
+    .section-zx9 {
+        gap: 20px;
+        padding: 40px 10px 20px;
+    }
+    .section-zx9 .zx9-speaker-img img {
+        width: 250px;
+    }
+}
+
 /* mobile responiveness */
 
 @media screen and (max-width:767px){

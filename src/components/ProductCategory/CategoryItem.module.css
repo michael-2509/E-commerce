@@ -37,6 +37,27 @@
     letter-spacing: 5px;
 }
 
+
+/* Tablet Responsiveness */
+@media screen and (max-width:1023px) {
+    .content {
+        margin: 0 2rem;
+    }
+
+    .content .category-img {
+        height: 560px;
+    }
+
+    .content .category-img img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content .content-info {
+        padding: 0 2rem;
+    }
+}
+
 @media screen and (max-width:767px) {
 
 .content{

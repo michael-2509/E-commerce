@@ -49,7 +49,14 @@ const Home = () => {
           </p>
           <Link to="/speaker/zx9-speaker">
             {" "}
-            <button> SEE PRODUCT</button>
+            <button
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+            >
+              {" "}
+              SEE PRODUCT
+            </button>
           </Link>
         </div>
       </section>
@@ -59,7 +66,14 @@ const Home = () => {
           <h3>ZX7 SPEAKER</h3>
           <Link to="/speaker/zx7-speaker">
             {" "}
-            <button> SEE PRODUCT</button>
+            <button
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+            >
+              {" "}
+              SEE PRODUCT
+            </button>
           </Link>
         </div>
       </section>
@@ -74,7 +88,14 @@ const Home = () => {
           <h3>YX1 EARPHONES</h3>
           <Link to="/earphone/yx1-earphones">
             {" "}
-            <button> SEE PRODUCT</button>
+            <button
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+            >
+              {" "}
+              SEE PRODUCT
+            </button>
           </Link>
         </div>
       </section>

@@ -126,11 +126,18 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  /* Tablet Responsiveness */
+@media screen and (max-width:1023px) {
+    .nav-center{
+      justify-content: center;
+      gap: 20px;
+    }
+}
+
  
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .nav-center {
-
         padding: 2rem 1rem;
     }
 
