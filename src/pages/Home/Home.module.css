@@ -130,7 +130,7 @@ button:hover {
 }
 
 /* Tablet Responsiveness */
-@media screen and (max-width:1023px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
     .section-zx9 {
         gap: 20px;
         padding: 40px 10px 20px;
